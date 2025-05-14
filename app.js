@@ -5,10 +5,10 @@ const updateProductId = document.querySelector('#update-id');
 const updateProductName = document.querySelector('#update-name');
 const updateProductPrice = document.querySelector('#update-price');
 
+const route = "http://52.14.212.251:3000";
 // Function to fetch all products from the server
 async function fetchProducts() {
   // const response = await fetch('http://localhost:3000/products');
-  const route = "http://52.14.212.251:3000";
   const response = await fetch(route + '/products');
   const products = await response.json();
 
