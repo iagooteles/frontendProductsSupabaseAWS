@@ -56,7 +56,7 @@ addProductForm.addEventListener('submit', async event => {
 
 // Function to add a new product
 async function addProduct(name, price) {
-  const response = await fetch('http://localhost:3000/products', {
+  const response = await fetch(route + '/products', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ async function addProduct(name, price) {
 
 // Function to delete a new product
 async function deleteProduct(id) {
-  const response = await fetch('http://localhost:3000/products/' + id, {
+  const response = await fetch(route + '/products/' + id, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
