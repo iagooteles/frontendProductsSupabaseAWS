@@ -60,11 +60,12 @@ body {
   input[type="text"],
   input[type="number"] {
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 25%;
     margin-bottom: 10px;
     box-sizing: border-box;
+    background-color: #f1f1f1;
   }
   
   input[type="submit"],
