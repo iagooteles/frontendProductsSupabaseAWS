@@ -13,27 +13,35 @@
 
     <!-- Formulário de Adicionar Produto -->
     <div class="card mb-4">
-      <h2 class="card-header">Adicionar Produto</h2>
+      <h2 class="py-4 m-auto">Adicionar Produto</h2>
       <div class="card-body">
-        <form id="add-product-form" class="row g-3">
-          <div class="col-md-4">
-            <label for="name" class="form-label">Nome</label>
+        <form id="add-product-form" class="d-flex flex-wrap justify-content-center align-items-end gap-4">
+          
+          <div class="d-flex align-items-center gap-2">
+            <label for="name" class="form-label mb-0">Nome:</label>
             <input type="text" class="form-control" id="name" name="name" required>
           </div>
-          <div class="col-md-4">
-            <label for="description" class="form-label">Descrição</label>
+
+          <div class="d-flex align-items-center gap-2">
+            <label for="description" class="form-label mb-0">Descrição:</label>
             <input type="text" class="form-control" id="description" name="description" required>
           </div>
-          <div class="col-md-4">
-            <label for="price" class="form-label">Preço</label>
+
+          <div class="d-flex align-items-center gap-2" style="max-width: 150px;">
+            <label for="price" class="form-label mb-0">Preço:</label>
             <input type="number" class="form-control" id="price" name="price" required step="0.01">
           </div>
-          <div class="col-12">
+
+          <div>
             <button type="submit" class="btn btn-success">Adicionar</button>
           </div>
+
         </form>
       </div>
     </div>
+
+
+
 
     <!-- Lista de Produtos -->
     <div class="card">
