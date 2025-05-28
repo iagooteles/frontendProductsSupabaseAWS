@@ -9,7 +9,7 @@ const updateProductDescription = document.querySelector('#update-description');
 
 const updateModal = new bootstrap.Modal(document.getElementById('updateModal'));
 
-const route = "http://18.216.197.168:3000";
+const route = "http://3.19.219.135:3000";
 
 async function fetchProducts() {
   const response = await fetch(route + '/products');
